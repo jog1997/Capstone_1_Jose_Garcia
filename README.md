@@ -1,2 +1,2 @@
-# Capstone_1_Jose_Garcia
-Capstone Project 1 by Jose Garcia
+# Capstone1_JoseGarcia
+ Capstone 1 Project by Jose Garcia

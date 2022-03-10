@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>New Sales Entries</h1>
+  <p>Add Sales with the form below:</p>
+  <form method="POST">
+      {# This hidden_tag is a CSRF security feature. #}
+      {{ form.hidden_tag() }}
+
+
+      {{form.emp_id.label}} {{form.emp_id()}}
+      {{form.prod_code.label}} {{form.prod_code()}}
+      {{form.prod_quantity.label}} {{form.prod_quantity()}}
+      {{form.warr_code.label}} {{form.warr_code()}}
+      {{form.warr_quantity.label}} {{form.warr_quantity()}}
+      {{form.current_week.label}} {{form.current_week()}}
+      {{form.current_year.label}} {{form.current_year()}}
+      {{ form.submit() }}
+  </form>
+</div>
+{% endblock %}
